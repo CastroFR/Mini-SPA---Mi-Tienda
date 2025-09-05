@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form"; // npm install react-hook-form
 import * as yuup from 'yup' // le decimos que use "yup" para importar toda la ñibreria de yup
 import { yupResolver } from '@hookform/resolvers/yup' // npm install @hookform/resolvers
 import { createUserWithEmailAndPassword } from "firebase/auth"; // importar variable de crear usuario
-import { auth } from "../../../repositories/firebase/config"; // importar auth desde repositories
+import { auth } from "../../../config/firebase"; // importar auth desde repositories
 //import {yupResolver} from '@hookform/resolvers'
 
 const schema = yuup.object({

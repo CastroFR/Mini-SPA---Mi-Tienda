@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../../../repositories/firebase/config';
+import { db } from "../../config/firebase";
 
 export const SearchProduct = () => {
     const [searchTerm, setSearchTerm] = useState('');

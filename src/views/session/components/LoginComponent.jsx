@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import * as yup from 'yup'
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../repositories/firebase/config";
+import { auth } from "../../../config/firebase";
 
 const schema = yup.object({
     email: yup.string().email("Please enter a correct format: email@email.com").required(),
