@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import * as yup from 'yup'
+import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../config/firebase";
